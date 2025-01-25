@@ -17,6 +17,7 @@ chrome_options.add_argument( "--remote-debugging-pipe" )
 db = SQLConnect.connect_with_connector()
 tz = pytz.timezone("US/Central")
 while True:
+    time.sleep(300.0)
     driver = webdriver.Chrome(options=chrome_options)
     Og_url = "https://mycscgo.com/laundry/summary/b94db20b-3bf8-4517-9cae-da46d7dd73f6/2303113-025"
     Tr_url = "https://mycscgo.com/laundry/summary/b94db20b-3bf8-4517-9cae-da46d7dd73f6/2303113-026"
