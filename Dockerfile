@@ -43,4 +43,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose 8080 (the standard Cloud Run port)
 EXPOSE 8080
 
-CMD ["gunicorn", "--bind", ":8080", "--workers", "1", "--threads", "8", "--timeout", "0", "main:app"]
+CMD ["gunicorn", "--bind", ":8080", "--workers", "1", "--threads", "8", "--timeout", "0", "main"]
